@@ -9,7 +9,7 @@ import SearchView from './views/searchView/SearchView';
 function App() {
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Navigation />
       <Switch>
         <Route path="/" exact><MainView /></Route>
