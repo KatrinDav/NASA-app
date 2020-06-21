@@ -1,0 +1,31 @@
+.wrapper {
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+}
+
+.image {
+    width: 50%;
+    background: url('../../images/img8.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    margin: 0 auto;
+
+    @media(max-width: 871px) {
+        width: 0;
+    }
+
+}
+
+.info {
+    min-width: 50%;
+    position: relative;
+
+    @media(max-width: 871px) {
+        width: 100%;
+
+
+    }
+
+}
