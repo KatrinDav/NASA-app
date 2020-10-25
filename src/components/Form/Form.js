@@ -2,10 +2,9 @@ import React from 'react';
 import styles from './Form.module.scss'
 
 
-const Form = ({ query, setQuery }) => {
+const Form = ({ query, setQuery, handleClick }) => {
     return (
         <>
-
             <div className={styles.form}>
                 <input
                     type="text"
@@ -14,9 +13,8 @@ const Form = ({ query, setQuery }) => {
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
                 /> <br />
+                <button className={styles.button} onClick={handleClick}>Search</button>
             </div>
-
-
 
         </>
     );
